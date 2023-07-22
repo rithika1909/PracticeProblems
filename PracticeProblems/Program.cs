@@ -6,8 +6,24 @@ namespace PracticeProblems
         static void Main(string[] args) 
         {
 
-            Console.WriteLine("Welcome To Practice Problems");
+            bool flag = true;
+            while (flag)
+            {
+                Console.WriteLine("Enter input to be executed\n 1.Find maximum and minimum element in array");
+                int input = Convert.ToInt32(Console.ReadLine());
+                switch (input)
+                {
+                    case 1:
+                        MaxMin maxmin = new MaxMin();
+                        maxmin.FindMaxMin();
+                        break;
+                    default:
+                        flag = false;
+                        break;
 
-        }
+
+                }
+
+            }
     }
 }
