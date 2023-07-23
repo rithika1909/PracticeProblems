@@ -20,7 +20,7 @@ namespace PracticeProblems
                 array[i]= Convert.ToInt32(Console.ReadLine());
             }
             var dict = new Dictionary<int, int>();
-            foreach (var value in array)
+            foreach (int value in array)
             {
                 if (dict.ContainsKey(value))
                 {
