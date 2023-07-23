@@ -9,7 +9,7 @@ namespace PracticeProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter input to be executed\n 1.Find maximum and minimum element in array\n 2.Find count of duplicate elements\n 3.Print Unique Elements\n 4.Print Frequency of elements\n 5.Print Pattern\n 6.Print Pattern1");
+                Console.WriteLine("Enter input to be executed\n 1.Find maximum and minimum element in array\n 2.Find count of duplicate elements\n 3.Print Unique Elements\n 4.Print Frequency of elements\n 5.Print Pattern\n 6.Print Pattern1\n 7.Print Reversed");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -36,6 +36,10 @@ namespace PracticeProblems
                     case 6:
                         PrintPattern1 printPattern1 = new PrintPattern1();
                         printPattern1.DisplayPattern();
+                        break;
+                    case 7:
+                        ReverseString reverseString = new ReverseString();
+                        reverseString.PrintReverseString();
                         break;
                     default:
                         flag = false;
